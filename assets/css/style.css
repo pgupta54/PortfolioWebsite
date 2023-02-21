@@ -933,7 +933,7 @@ main {
 .select-item button:hover { --eerie-black-2: hsl(240, 2%, 20%); }
 
 .project-list {
-  display: grid;
+  /* display: grid; */
   grid-template-columns: 1fr;
   gap: 30px;
   margin-bottom: 10px;
@@ -1912,6 +1912,12 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 .skill-fill1{
   width: 0;
-  transition: all 1s;
-  transition-delay: 4ms;
+  transition: all 4s;
+  /* transition-delay: 4ms; */
+}
+
+.skill-fill1_1,.skill-fill1_2,.skill-fill1_3,.skill-fill1_4,.skill-fill1_5,.skill-fill1_6,.skill-fill1_7,.skill-fill1_8,.skill-fill1_9,.skill-fill1_10,.skill-fill1_11,.skill-fill1_12{
+  width: 0;
+  transition: all 2s;
+  /* transition-delay: 4ms; */
 }

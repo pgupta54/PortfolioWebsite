@@ -176,13 +176,56 @@ for (let i = 0; i < navigationLinks.length; i++) {
 // /* Example */
 // updateProgressBar(myProgressBar, 72);
 
-function doFunction(){
+function About_Skills(){
   console.log('abx')
+  document.querySelector(".skill-fill1_1").style.width = `75%`;
+  document.getElementById("skill-data1_1").innerHTML = "75%";
+
+  document.querySelector(".skill-fill1_2").style.width = `70%`;
+  document.getElementById("skill-data1_2").innerHTML = "70%";
+
+  document.querySelector(".skill-fill1_3").style.width = `60%`;
+  document.getElementById("skill-data1_3").innerHTML = "60%";
+
+  document.querySelector(".skill-fill1_4").style.width = `80%`;
+  document.getElementById("skill-data1_4").innerHTML = "80%";
+
+  document.querySelector(".skill-fill1_5").style.width = `75%`;
+  document.getElementById("skill-data1_5").innerHTML = "75%";
+
+  document.querySelector(".skill-fill1_6").style.width = `80%`;
+  document.getElementById("skill-data1_6").innerHTML = "80%";
+
+  document.querySelector(".skill-fill1_7").style.width = `75%`;
+  document.getElementById("skill-data1_7").innerHTML = "75%";
+
+  document.querySelector(".skill-fill1_8").style.width = `70%`;
+  document.getElementById("skill-data1_8").innerHTML = "70%";
+
+  document.querySelector(".skill-fill1_9").style.width = `65%`;
+  document.getElementById("skill-data1_9").innerHTML = "65%";
+
+  document.querySelector(".skill-fill1_10").style.width = `75%`;
+  document.getElementById("skill-data1_10").innerHTML = "75%";
+
+  document.querySelector(".skill-fill1_11").style.width = `60%`;
+  document.getElementById("skill-data1_11").innerHTML = "60%";
+
+  document.querySelector(".skill-fill1_12").style.width = `55%`;
+  document.getElementById("skill-data1_12").innerHTML = "55%";
+
+}
+
+
+function About_All_Skills(){
+  console.log('xde')
   document.querySelector(".skill-fill1").style.width = `75%`;
   document.getElementById("skill-data1").innerHTML = "75%";
 
   document.querySelector(".skill-fill2").style.width = `90%`;
 }
+
+
 
 // document.querySelector(".skill-data1").style.value = `90%`;
 // const value1=`90%`;

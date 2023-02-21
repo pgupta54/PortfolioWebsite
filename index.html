@@ -258,7 +258,7 @@
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web development</h4>
+                <h4 class="h4 service-item-title">Skills</h4>
 
                 <p class="service-item-text">
                   High-quality development of sites at the professional level.
@@ -538,7 +538,7 @@
 
               <p class="timeline-text">
                 <b>Master of Science in Data Analytics Engineering, GPA: 3.82/4.0</b> <br>
-                Focused Coursework: Foundation of Data Analytics, Data Management, Data Mining, Computation & Visualization
+                Focused Coursework: Data Analytics, Data Management, Data Mining, Computation & Visualization
               </p>
 
             </li>
@@ -660,15 +660,9 @@
 
           <ul class="skills-list content-card">
 
-            <!-- <li class="timeline-item1">
-              <h4 class="h4 timeline-item-title">Python</h4>
-            </li>
-            <li class="timeline-item1">
-              <h4 class="h4 timeline-item-title">SQL</h4>
-            </li> -->
             <li class="skills-item-left">
 
-              <button onclick="doFunction();">xyzzzz</button>
+              <!-- <button onclick="doFunction();">xyzzzz</button> -->
               <div class="title-wrapper">
                 <h5 class="h5">Python</h5>
                 <data id="skill-data1" value="75"></data>
@@ -849,80 +843,60 @@
         <section class="projects">
 
           <ul class="filter-list">
-
             <li class="filter-item">
               <button class="active" data-filter-btn>All</button>
             </li>
-
             <li class="filter-item">
-              <button data-filter-btn>Web design</button>
+              <button data-filter-btn>Education</button>
             </li>
-
             <li class="filter-item">
-              <button data-filter-btn>Applications</button>
+              <button data-filter-btn>Experience</button>
             </li>
-
             <li class="filter-item">
-              <button data-filter-btn>Web development</button>
+              <button data-filter-btn onclick="About_Skills();">Skills</button>
             </li>
-
           </ul>
+
 
           <div class="filter-select-box">
 
             <button class="filter-select" data-select>
-
               <div class="select-value" data-selecct-value>Select category</div>
-
               <div class="select-icon">
                 <ion-icon name="chevron-down"></ion-icon>
               </div>
-
             </button>
 
             <ul class="select-list">
-
               <li class="select-item">
                 <button data-select-item>All</button>
               </li>
-
               <li class="select-item">
-                <button data-select-item>Web design</button>
+                <button data-select-item>Education</button>
               </li>
-
               <li class="select-item">
-                <button data-select-item>Applications</button>
+                <button data-select-item>Experience</button>
               </li>
-
               <li class="select-item">
-                <button data-select-item>Web development</button>
+                <button data-select-item>Skills</button>
               </li>
-
             </ul>
 
           </div>
 
+<!-- 
           <ul class="project-list">
 
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Finance</h3>
-
-                <p class="project-category">Web development</p>
+                    
+                    
+                  </ul>
+        
+                </section>
 
               </a>
-            </li>
+            </li> -->
 
-            <li class="project-item  active" data-filter-item data-category="web development">
+            <!-- <li class="project-item  active" data-filter-item data-category="skills">
               <a href="#">
 
                 <figure class="project-img">
@@ -935,48 +909,313 @@
 
                 <h3 class="project-title">Orizon</h3>
 
-                <p class="project-category">Web development</p>
+                <p class="project-category">Skills</p>
 
               </a>
-            </li>
+            </li> -->
 
-            <li class="project-item  active" data-filter-item data-category="web design">
+            <li class="project-item  active" data-filter-item data-category="education">
               <a href="#">
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
+                <section class="timeline">
+
+                  <div class="title-wrapper">
+                    <div class="icon-box">
+                      <ion-icon name="book-outline"></ion-icon>
+                    </div>
+        
+                    <h3 class="h3">Education</h3>
                   </div>
-
-                  <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Fundo</h3>
-
-                <p class="project-category">Web design</p>
+        
+                  <ol class="timeline-list">
+        
+                    <li class="timeline-item">
+        
+                      <!-- <h4 class="h4 timeline-item-title">Northeastern University, Boston, MA, USA</h4> -->
+                      <!-- <p style="text-align: right;">MA, USA</p> -->
+                      <h4 class="h4 timeline-item-title">
+                        <div style="float: left;">Northeastern University, Boston</div>
+                        <div style="float: right;">MA, USA</div>
+                      </h4>
+                      <br>
+                      <span>Sep. 2020 — Expected May 2024</span>
+        
+                      <p class="timeline-text">
+                        <b>Master of Science in Data Analytics Engineering, GPA: 3.82/4.0</b> <br>
+                        Focused Coursework: Data Analytics, Data Management, Data Mining, Computation & Visualization
+                      </p>
+        
+                    </li>
+        
+                    <li class="timeline-item">
+        
+                      <h4 class="h4 timeline-item-title">
+                        <div style="float: left;">Vellore Institute of Technology, Vellore</div>
+                        <div style="float: right;">TN, India</div>
+                      </h4>
+                      <br>
+        
+                      <span>Jul. 2016 — May 2020</span>
+        
+                      <p class="timeline-text">
+                        <b>Bachelor of Technology in Electronics and Comm. Engineering, CGPA: 8.60/10.0</b> <br>
+                        Focused Coursework: Object-Oriented Programming, Data Structure and Algorithms, Probability & Statistics
+                      </p>
+        
+                    </li>
+        
+                  </ol>
+      
+                </section>
 
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="applications">
+            <li class="project-item active" data-filter-item data-category="experience">
               <a href="#">
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
+                <section class="timeline">
+
+                  <div class="title-wrapper">
+                    <div class="icon-box">
+                      <ion-icon name="book-outline"></ion-icon>
+                    </div>
+        
+                    <h3 class="h3">Experience</h3>
                   </div>
+        
+                  <ol class="timeline-list">
+        
+                    <li class="timeline-item">
+        
+                      <h4 class="h4 timeline-item-title">
+                        <div style="float: left;">DXC Technology</div>
+                        <div style="float: right;">Bangalore, India</div>
+                        <br>
+                        Professional 1 Software Engineer
+                      </h4>
+        
+                      <span>Jul. 2020 — Aug. 2022</span>
+        
+                      <p class="timeline-text">
+                        <b><u>Development of Data Quality Tool:</u></b>
+                        <br>• Designed, coded, and built a software tool for Data Quality checks on incoming data through the creation of data 
+                        pipelines and ETL processes with the help of a team - The tool was able to successfully clean and analyze data from over 
+                        10,000 records in just 15 minutes, improving the accuracy of the data by 95%. 
+                        <br>• Identified and removed over 500 duplicate records using the tool, reducing the data size by 10%.
+                        <br>• Developed and designed ADF pipelines to automate trigger for Azure Databricks notebook, which incorporated data 
+                        warehousing techniques and big data technologies like Hadoop and Spark - The ADF pipelines successfully processed 
+                        over 100 GB of big data in just 30 minutes, reducing the manual processing time by over 70%.
+                        <br>• Eliminated human errors by automating the pipeline, resulting in a 100% accuracy rate in processing the data.
+                        <br>• Conducted sessions with clients to understand business requirements and used data modeling and data visualization 
+                        techniques to provide business intelligence using Google Charts & Microsoft Power BI.
+                        <br>• Maintained a CI/CD platform for the tool using GitHub and deployed it to the Azure cloud computing platform, ensuring 
+                        scalability and performance optimization.
+                      </p>
+                      <br>
+                      <p class="timeline-text">
+                        <b><u>Development of Snowflake Data Extraction Scheduler:</b></u>
+                        <br>• Implemented a secure and interactive user interface on Microsoft Power Apps. The interface enabled users to trigger the 
+                        extraction of data from databases such as MS SQL Server, and dynamically build Azure Logic Apps.
+                        <br>• Developed an Azure function in Python to extract data from multiple databases and exported it to the user-defined cloud 
+                        platform like AWS S3 and Azure.
+                        <br>• Ensured data security and privacy by integrating the tool with Azure Active Directory, providing role-based access 
+                        control and data governance capabilities, resulting in a 40% decrease in data breaches.
+                        <br>• Followed Agile Methodology to meet client requirements and improve the tool's performance and scalability, resulting 
+                        in a 25% increase in tool performance and a 30% reduction in development time.
+                      </p>
+                    </li>
 
-                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Brawlhalla</h3>
-
-                <p class="project-category">Applications</p>
-
+                  </ol>
+                  
+                </section>
+        
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web design">
+
+            <li class="project-item active" data-filter-item data-category="skills">
+              <!-- <a href="#"> -->
+
+                <section class="skill">
+
+                  <!-- <h3 class="h3 skills-title">My skills</h3> -->
+
+                  <div class="title-wrapper">
+                    <div class="icon-box">
+                      <ion-icon name="book-outline"></ion-icon>
+                    </div>
+        
+                    <h3 class="h3">My skills</h3>
+                  </div>
+        
+                  <ul class="skills-list content-card">
+        
+                    <li class="skills-item-left">
+        
+                      <!-- <button onclick="doFunction();">xyzzzz</button> -->
+                      <div class="title-wrapper">
+                        <h5 class="h5">Python</h5>
+                        <data id="skill-data1_1" value="75"></data>
+                      </div>
+
+        
+                      <div class="skill-progress-bg">
+                        <div class="skill-progress-fill skill-fill1_1"></div>
+                      </div>
+        
+                    </li>
+        
+                    <li class="skills-item-mid">
+        
+                      <div class="title-wrapper">
+                        <h5 class="h5">SQL</h5>
+                        <data id="skill-data1_2" value="70">70%</data>
+                      </div>
+        
+                      <div class="skill-progress-bg">
+                        <div class="skill-progress-fill skill-fill1_2"></div>
+                      </div>
+        
+                    </li>
+        
+                    <li class="skills-item-right" >
+        
+                      <div class="title-wrapper">
+                        <h5 class="h5">Microsoft Azure</h5>
+                        <data id="skill-data1_3" value="60">60%</data>
+                      </div>
+        
+                      <div class="skill-progress-bg">
+                        <div class="skill-progress-fill skill-fill1_3"></div>
+                      </div>
+        
+                    </li>
+                    
+                    <li class="skills-item-left">
+        
+                      <div class="title-wrapper">
+                        <h5 class="h5">Data Visualization</h5>
+                        <data id="skill-data1_4" value="80">80%</data>
+                      </div>
+        
+                      <div class="skill-progress-bg">
+                        <div class="skill-progress-fill skill-fill1_4"></div>
+                      </div>
+        
+                    </li>
+        
+                    <li class="skills-item-mid">
+        
+                      <div class="title-wrapper">
+                        <h5 class="h5">Power BI</h5>
+                        <data id="skill-data1_5" value="75">75%</data>
+                      </div>
+        
+                      <div class="skill-progress-bg">
+                        <div class="skill-progress-fill skill-fill1_5"></div>
+                      </div>
+        
+                    </li>
+        
+                    <li class="skills-item-right">
+        
+                      <div class="title-wrapper">
+                        <h5 class="h5">Django Framework</h5>
+                        <data id="skill-data1_6" value="80">80%</data>
+                      </div>
+        
+                      <div class="skill-progress-bg">
+                        <div class="skill-progress-fill skill-fill1_6"></div>
+                      </div>
+        
+                    </li>
+        
+                    <li class="skills-item-left">
+        
+                      <div class="title-wrapper">
+                        <h5 class="h5">Angular Framework</h5>
+                        <data id="skill-data1_7" value="75">75%</data>
+                      </div>
+        
+                      <div class="skill-progress-bg">
+                        <div class="skill-progress-fill skill-fill1_7"></div>
+                      </div>
+        
+                    </li>
+        
+                    <li class="skills-item-mid">
+        
+                      <div class="title-wrapper">
+                        <h5 class="h5">Microsoft Excel</h5>
+                        <data id="skill-data1_8" value="70">70%</data>
+                      </div>
+        
+                      <div class="skill-progress-bg">
+                        <div class="skill-progress-fill skill-fill1_8"></div>
+                      </div>
+        
+                    </li>
+        
+                    <li class="skills-item-right">
+        
+                      <div class="title-wrapper">
+                        <h5 class="h5">Data Mining</h5>
+                        <data id="skill-data1_9" value="65">65%</data>
+                      </div>
+        
+                      <div class="skill-progress-bg">
+                        <div class="skill-progress-fill skill-fill1_9"></div>
+                      </div>
+        
+                    </li>            
+                    
+        
+                    <li class="skills-item-left">
+        
+                      <div class="title-wrapper">
+                        <h5 class="h5">HTML, CSS, Typescript</h5>
+                        <data id="skill-data1_10" value="75">75%</data>
+                      </div>
+        
+                      <div class="skill-progress-bg">
+                        <div class="skill-progress-fill skill-fill1_10"></div>
+                      </div>
+        
+                    </li>
+        
+        
+                    <li class="skills-item-mid">
+        
+                      <div class="title-wrapper">
+                        <h5 class="h5">Machine Learning</h5>
+                        <data id="skill-data1_11" value="60">60%</data>
+                      </div>
+        
+                      <div class="skill-progress-bg">
+                        <div class="skill-progress-fill skill-fill1_11"></div>
+                      </div>
+        
+                    </li>
+        
+                    <li class="skills-item-right">
+        
+                      <div class="title-wrapper">
+                        <h5 class="h5">C++</h5>
+                        <data id="skill-data1_12" value="55">55%</data>
+                      </div>
+        
+                      <div class="skill-progress-bg">
+                        <div class="skill-progress-fill skill-fill1_12"></div>
+                      </div>
+        
+                    </li>
+                  </ul>
+                </section>
+              <!-- </a> -->
+            </li>
+
+            <!-- <li class="project-item  active" data-filter-item data-category="Education">
               <a href="#">
 
                 <figure class="project-img">
@@ -989,12 +1228,12 @@
 
                 <h3 class="project-title">DSM.</h3>
 
-                <p class="project-category">Web design</p>
+                <p class="project-category">Education</p>
 
               </a>
-            </li>
+            </li> -->
 
-            <li class="project-item  active" data-filter-item data-category="web design">
+            <!-- <li class="project-item  active" data-filter-item data-category="education">
               <a href="#">
 
                 <figure class="project-img">
@@ -1007,12 +1246,12 @@
 
                 <h3 class="project-title">MetaSpark</h3>
 
-                <p class="project-category">Web design</p>
+                <p class="project-category">Education</p>
 
               </a>
-            </li>
+            </li> -->
 
-            <li class="project-item  active" data-filter-item data-category="web development">
+            <!-- <li class="project-item  active" data-filter-item data-category="skills">
               <a href="#">
 
                 <figure class="project-img">
@@ -1025,12 +1264,12 @@
 
                 <h3 class="project-title">Summary</h3>
 
-                <p class="project-category">Web development</p>
+                <p class="project-category">Skills</p>
 
               </a>
-            </li>
+            </li> -->
 
-            <li class="project-item  active" data-filter-item data-category="applications">
+            <!-- <li class="project-item  active" data-filter-item data-category="experience">
               <a href="#">
 
                 <figure class="project-img">
@@ -1043,12 +1282,12 @@
 
                 <h3 class="project-title">Task Manager</h3>
 
-                <p class="project-category">Applications</p>
+                <p class="project-category">Experience</p>
 
               </a>
-            </li>
+            </li> -->
 
-            <li class="project-item  active" data-filter-item data-category="web development">
+            <!-- <li class="project-item  active" data-filter-item data-category="skills">
               <a href="#">
 
                 <figure class="project-img">
@@ -1061,10 +1300,10 @@
 
                 <h3 class="project-title">Arrival</h3>
 
-                <p class="project-category">Web development</p>
+                <p class="project-category">Skills</p>
 
               </a>
-            </li>
+            </li> -->
 
           </ul>
 
@@ -1080,7 +1319,7 @@
         - #BLOG
       -->
 
-      <article class="blog" data-page="blog">
+      <!-- <article class="blog" data-page="blog">
 
         <header>
           <h2 class="h2 article-title">Blog</h2>
@@ -1262,7 +1501,7 @@
 
         </section>
 
-      </article>
+      </article> -->
 
 
 
