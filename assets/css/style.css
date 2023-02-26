@@ -1031,18 +1031,18 @@ main {
 
 
 /*-----------------------------------*\
-  #BLOG
+  #DOCUMENT
 \*-----------------------------------*/
 
-.blog-posts { margin-bottom: 10px; }
+.document-posts { margin-bottom: 10px; }
 
-.blog-posts-list {
+.document-posts-list {
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
 }
 
-.blog-post-item > a {
+.document-post-item > a {
   position: relative;
   background: var(--border-gradient-onyx);
   height: 100%;
@@ -1051,7 +1051,7 @@ main {
   z-index: 1;
 }
 
-.blog-post-item > a::before {
+.document-post-item > a::before {
   content: "";
   position: absolute;
   inset: 1px;
@@ -1060,25 +1060,25 @@ main {
   z-index: -1;
 }
 
-.blog-banner-box {
+.document-banner-box {
   width: 100%;
   height: 200px;
   border-radius: 12px;
   overflow: hidden;
 }
 
-.blog-banner-box img {
+.document-banner-box img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   transition: var(--transition-1);
 }
 
-.blog-post-item > a:hover .blog-banner-box img { transform: scale(1.1); }
+.document-post-item > a:hover .document-banner-box img { transform: scale(1.1); }
 
-.blog-content { padding: 15px; }
+.document-content { padding: 15px; }
 
-.blog-meta {
+.document-meta {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -1086,28 +1086,28 @@ main {
   margin-bottom: 10px;
 }
 
-.blog-meta :is(.blog-category, time) {
+.document-meta :is(.document-category, time) {
   color: var(--light-gray-70);
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
 }
 
-.blog-meta .dot {
+.document-meta .dot {
   background: var(--light-gray-70);
   width: 4px;
   height: 4px;
   border-radius: 4px;
 }
 
-.blog-item-title {
+.document-item-title {
   margin-bottom: 10px;
   line-height: 1.3;
   transition: var(--transition-1);
 }
 
-.blog-post-item > a:hover .blog-item-title { color: var(--orange-yellow-crayola); }
+.document-post-item > a:hover .document-item-title { color: var(--orange-yellow-crayola); }
 
-.blog-text {
+.document-text {
   color: var(--light-gray);
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
@@ -1244,11 +1244,11 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 
   /**
-   * #PORTFOLIO, BLOG 
+   * #PORTFOLIO, document 
    */
 
   .project-img,
-  .blog-banner-box { height: auto; }
+  .document-banner-box { height: auto; }
 
 }
 
@@ -1340,6 +1340,8 @@ textarea.form-input::-webkit-resizer { display: none; }
   .avatar-box { border-radius: 30px; }
 
   .avatar-box img { width: 120px; }
+
+  .avatar-box:hover {transform: scale(1.2); cursor: pointer;}
 
   .info-content .name { margin-bottom: 15px; }
 
@@ -1503,14 +1505,14 @@ textarea.form-input::-webkit-resizer { display: none; }
   
 
   /**
-   * #PORTFOLIO, BLOG
+   * #PORTFOLIO, document
    */
 
-  .project-img, .blog-banner-box { border-radius: 16px; }
+  .project-img, .document-banner-box { border-radius: 16px; }
 
-  .blog-posts-list { gap: 30px; }
+  .document-posts-list { gap: 30px; }
 
-  .blog-content { padding: 25px; }
+  .document-content { padding: 25px; }
 
 
 
@@ -1622,9 +1624,9 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .filter-item button.active { color: var(--orange-yellow-crayola); }
 
-  /* portfolio and blog grid */
+  /* portfolio and document grid */
 
-  .project-list, .blog-posts-list { grid-template-columns: 1fr 1fr; }
+  .project-list, .document-posts-list { grid-template-columns: 1fr 1fr; }
 
 
 
@@ -1749,10 +1751,10 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 
   /**
-   * BLOG
+   * document
    */
 
-  .blog-banner-box { height: 230px; }
+  .document-banner-box { height: 230px; }
 
 }
 
@@ -1910,14 +1912,85 @@ textarea.form-input::-webkit-resizer { display: none; }
 .skills-item-mid:not(:last-child) { margin-bottom: 25px; }
 .skills-item-right:not(:last-child) { margin-bottom: 25px; }
 
-.skill-fill1{
-  width: 0;
-  transition: all 4s;
-  /* transition-delay: 4ms; */
-}
-
-.skill-fill1_1,.skill-fill1_2,.skill-fill1_3,.skill-fill1_4,.skill-fill1_5,.skill-fill1_6,.skill-fill1_7,.skill-fill1_8,.skill-fill1_9,.skill-fill1_10,.skill-fill1_11,.skill-fill1_12{
+.skill-fill1, .skill-fill2, .skill-fill3, .skill-fill4, .skill-fill5, .skill-fill6, .skill-fill7, .skill-fill8, .skill-fill9, .skill-fill10, .skill-fill11, .skill-fill12{
   width: 0;
   transition: all 2s;
   /* transition-delay: 4ms; */
 }
+
+
+
+@keyframes cf3FadeInOut {
+  0% {
+  opacity:1;
+}
+45% {
+opacity:1;
+}
+55% {
+opacity:0;
+}
+100% {
+opacity:0;
+}
+}
+
+.dummyclass{
+  animation-name: cf3FadeInOut;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+  animation-direction: alternate;
+}
+
+/* 
+  Document, modal popup: START
+*/
+
+/* The modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 9999; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.8); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 2% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Iframe for PDF file */
+#pdf-iframe {
+  width: 100%;
+  height: 85vh;
+}
+
+#pdf-modal {
+  /* Set the initial opacity to 0 */
+  opacity: 0;
+
+  /* Add a transition */
+  transition: opacity 0.3s ease-in-out;
+}
+
+#pdf-modal.show {
+  /* Set the opacity to 1 to trigger the animation */
+  opacity: 1;
+}
+
+
+/* 
+  Document, modal popup: END
+*/
+
+

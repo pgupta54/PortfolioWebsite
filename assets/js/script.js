@@ -163,70 +163,152 @@ for (let i = 0; i < navigationLinks.length; i++) {
   });
 }
 
+About_Skills();
 
+function About_Skills()
+{
+  document.querySelector(".skill-fill1_1").style.width = `0%`; // reset width to 0%
+  document.getElementById("skill-data1_1").innerHTML = "0%";
+  document.querySelector(".skill-fill1_2").style.width = `0%`; // reset width to 0%
+  document.getElementById("skill-data1_2").innerHTML = "0%";
+  document.querySelector(".skill-fill1_3").style.width = `0%`; // reset width to 0%
+  document.getElementById("skill-data1_3").innerHTML = "0%";
+  document.querySelector(".skill-fill1_4").style.width = `0%`; // reset width to 0%
+  document.getElementById("skill-data1_4").innerHTML = "0%";
+  document.querySelector(".skill-fill1_5").style.width = `0%`; // reset width to 0%
+  document.getElementById("skill-data1_5").innerHTML = "0%";
+  document.querySelector(".skill-fill1_6").style.width = `0%`; // reset width to 0%
+  document.getElementById("skill-data1_6").innerHTML = "0%";
+  document.querySelector(".skill-fill1_7").style.width = `0%`; // reset width to 0%
+  document.getElementById("skill-data1_7").innerHTML = "0%";
+  document.querySelector(".skill-fill1_8").style.width = `0%`; // reset width to 0%
+  document.getElementById("skill-data1_8").innerHTML = "0%";
+  document.querySelector(".skill-fill1_9").style.width = `0%`; // reset width to 0%
+  document.getElementById("skill-data1_9").innerHTML = "0%";
+  document.querySelector(".skill-fill1_10").style.width = `0%`; // reset width to 0%
+  document.getElementById("skill-data1_10").innerHTML = "0%";
+  document.querySelector(".skill-fill1_11").style.width = `0%`; // reset width to 0%
+  document.getElementById("skill-data1_11").innerHTML = "0%";
+  document.querySelector(".skill-fill1_12").style.width = `0%`; // reset width to 0%
+  document.getElementById("skill-data1_12").innerHTML = "0%";
 
-// function updateProgressBar(progressBar, value) {
-//   value = Math.round(value);
-//   progressBar.querySelector(".progress__fill").style.width = `${value}%`;
-//   // progressBar.querySelector(".progress__text").textContent = `${value}%`;
-// }
-
-// const myProgressBar = document.querySelector(".progress");
-
-// /* Example */
-// updateProgressBar(myProgressBar, 72);
-
-function About_Skills(){
-  console.log('abx')
-  document.querySelector(".skill-fill1_1").style.width = `75%`;
-  document.getElementById("skill-data1_1").innerHTML = "75%";
-
-  document.querySelector(".skill-fill1_2").style.width = `70%`;
-  document.getElementById("skill-data1_2").innerHTML = "70%";
-
-  document.querySelector(".skill-fill1_3").style.width = `60%`;
-  document.getElementById("skill-data1_3").innerHTML = "60%";
-
-  document.querySelector(".skill-fill1_4").style.width = `80%`;
+  setTimeout(function() {
+  document.querySelector(".skill-fill1_1").style.width = `80%`; // set new width
+  document.getElementById("skill-data1_1").innerHTML = "80%";
+  document.querySelector(".skill-fill1_2").style.width = `75%`; // set new width
+  document.getElementById("skill-data1_2").innerHTML = "75%";
+  document.querySelector(".skill-fill1_3").style.width = `65%`; // set new width
+  document.getElementById("skill-data1_3").innerHTML = "65%";
+  document.querySelector(".skill-fill1_4").style.width = `80%`; // set new width
   document.getElementById("skill-data1_4").innerHTML = "80%";
-
-  document.querySelector(".skill-fill1_5").style.width = `75%`;
-  document.getElementById("skill-data1_5").innerHTML = "75%";
-
-  document.querySelector(".skill-fill1_6").style.width = `80%`;
+  document.querySelector(".skill-fill1_5").style.width = `65%`; // set new width
+  document.getElementById("skill-data1_5").innerHTML = "65%";
+  document.querySelector(".skill-fill1_6").style.width = `80%`; // set new width
   document.getElementById("skill-data1_6").innerHTML = "80%";
-
-  document.querySelector(".skill-fill1_7").style.width = `75%`;
+  document.querySelector(".skill-fill1_7").style.width = `75%`; // set new width
   document.getElementById("skill-data1_7").innerHTML = "75%";
-
-  document.querySelector(".skill-fill1_8").style.width = `70%`;
+  document.querySelector(".skill-fill1_8").style.width = `70%`; // set new width
   document.getElementById("skill-data1_8").innerHTML = "70%";
-
-  document.querySelector(".skill-fill1_9").style.width = `65%`;
-  document.getElementById("skill-data1_9").innerHTML = "65%";
-
-  document.querySelector(".skill-fill1_10").style.width = `75%`;
+  document.querySelector(".skill-fill1_9").style.width = `70%`; // set new width
+  document.getElementById("skill-data1_9").innerHTML = "70%";
+  document.querySelector(".skill-fill1_10").style.width = `75%`; // set new width
   document.getElementById("skill-data1_10").innerHTML = "75%";
-
-  document.querySelector(".skill-fill1_11").style.width = `60%`;
-  document.getElementById("skill-data1_11").innerHTML = "60%";
-
-  document.querySelector(".skill-fill1_12").style.width = `55%`;
-  document.getElementById("skill-data1_12").innerHTML = "55%";
-
+  document.querySelector(".skill-fill1_11").style.width = `70%`; // set new width
+  document.getElementById("skill-data1_11").innerHTML = "70%";
+  document.querySelector(".skill-fill1_12").style.width = `60%`; // set new width
+  document.getElementById("skill-data1_12").innerHTML = "60%";
+  }, 10);
 }
 
 
-function About_All_Skills(){
-  console.log('xde')
-  document.querySelector(".skill-fill1").style.width = `75%`;
-  document.getElementById("skill-data1").innerHTML = "75%";
+/* 
+  Document, modal popup: START
+*/
 
-  document.querySelector(".skill-fill2").style.width = `90%`;
+// Get the link and modal elements
+const openModalLinks = document.querySelectorAll(".open-modal");
+const modal = document.getElementById("pdf-modal");
+const modalContent = document.querySelector(".modal-content");
+
+// Loop through each open modal link and add a click event listener
+openModalLinks.forEach((link) => {
+  link.addEventListener("click", openModal);
+});
+
+// Function to open the modal and display the PDF file
+function openModal(event) {
+  // Prevent default link behavior
+  event.preventDefault();
+
+  // Get the PDF file path from the data-pdf attribute of the clicked link
+  const pdfPath = event.currentTarget.dataset.pdf;
+
+  // Set the source of the iframe to the PDF file path
+  modalContent.innerHTML = `<iframe id="pdf-iframe" src="${pdfPath}" frameborder="0"></iframe>`;
+
+  // Display the modal with animation
+  modal.style.display = "block";
+  setTimeout(() => {
+    modal.classList.add("show");
+  }, 10);
+}
+
+// Add a click event listener to the modal to close it
+modal.addEventListener("click", closeModal);
+
+// Function to close the modal
+function closeModal() {
+  // Hide the modal with animation
+  modal.classList.remove("show");
+  setTimeout(() => {
+    modal.style.display = "none";
+    modalContent.innerHTML = "";
+  }, 300);
+}
+
+/* 
+  Document, modal popup: END
+*/
+
+
+About_Skills();
+
+
+/* 
+  Contact, Send Email: START
+*/
+
+function sendMail(event) {
+  event.preventDefault();
+
+  var name = document.getElementById("name").value;
+  var email = document.getElementById("email").value;
+  var message = document.getElementById("message").value;
+  console.log(name, email, message);
+
+  const serviceID = "service_15xnpqa";
+  const templateID = "template_80i64fa";
+
+  if (name !== "" && email !== "" && message !== "") {
+    document.querySelector('.form-btn').removeAttribute('disabled');
+    emailjs.send(serviceID, templateID, {
+        name: name,
+        email: email,
+        message: message,
+      })
+      .then(res => {
+        document.getElementById("name").value = "";
+        document.getElementById("email").value = "";
+        document.getElementById("message").value = "";
+        console.log(res);
+        alert("Your message sent successfully!!");
+        document.querySelector('.form-btn').setAttribute('disabled', '');
+      })
+      .catch(err => console.log(err));
+  }
 }
 
 
-
-// document.querySelector(".skill-data1").style.value = `90%`;
-// const value1=`90%`;
-
+/* 
+  Contact, Send Email: END
+*/
