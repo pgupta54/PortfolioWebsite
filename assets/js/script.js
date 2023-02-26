@@ -242,10 +242,10 @@ function openModal(event) {
 
   // Get the PDF file path from the data-pdf attribute of the clicked link
   const pdfPath = event.currentTarget.dataset.pdf;
-
+  console.log("hello world")
   // Set the source of the iframe to the PDF file path
   modalContent.innerHTML = `<iframe id="pdf-iframe" src="${pdfPath}" frameborder="0"></iframe>`;
-
+  console.log("hello world2")
   // Display the modal with animation
   modal.style.display = "block";
   setTimeout(() => {
