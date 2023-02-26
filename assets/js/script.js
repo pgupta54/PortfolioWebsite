@@ -163,7 +163,6 @@ for (let i = 0; i < navigationLinks.length; i++) {
   });
 }
 
-About_Skills();
 
 function About_Skills()
 {
@@ -220,6 +219,7 @@ function About_Skills()
   }, 10);
 }
 
+About_Skills();
 
 /* 
   Document, modal popup: START
