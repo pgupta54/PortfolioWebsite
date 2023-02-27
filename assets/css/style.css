@@ -2011,30 +2011,38 @@ opacity:0;
   overflow: auto; /* Enable scroll if needed */
   /* background-color: rgb(0,0,0); */
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  /* border-radius: 20px; */
 }
 
 /* Modal Content/Box */
 .modal-content-project {
-  background-color: #fefefe;
+  background-color: var(--eerie-black-1);
   margin: 15% auto; /* 15% from the top and centered */
   padding: 20px;
   border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
+  width: 60%; /* Could be more or less, depending on screen size */
   
   box-shadow: 0 0 20px rgba(0,0,0,0.5);
   position: relative;
-  transition: all 0.5s ease-in-out;
-  transform: scale(0);
-    /* opacity: 0; */
+  transition: all 0.2s ease-in-out;
+  transform: scale(0.6);
+  /* opacity: 0; */
+  border-radius: 20px;
 }
 
 .modal-content-project.show {
   transform: scale(1);
 }
 
+.modal-content-project span {
+  color: var(--vegas-gold);
+  font-weight: var(--fw-400);
+  line-height: 1.6;
+}
+
 /* The Close Button */
 .close {
-  color: #aaaaaa;
+  color: #ffffff !important;
   float: right;
   font-size: 28px;
   font-weight: bold;
@@ -2042,7 +2050,7 @@ opacity:0;
 
 .close:hover,
 .close:focus {
-  color: #000;
+  color: var(--vegas-gold);
   text-decoration: none;
   cursor: pointer;
 }
@@ -2051,7 +2059,35 @@ li.document-post-item{
   cursor: pointer;
 }
 
+.modal-content-project p {
+  margin-top: 10px;
+  color: var(--light-gray);
+  font-size: var(--fs-6);
+  font-weight: var(--fw-300);
+  line-height: 1.6;
+}
+
+/* .modal-content-project p {
+  margin-left: 1.5em;
+  text-indent: -1em;
+}
+.modal-content-project p:before {
+  content: "\2022";
+  margin-right: 0.5em;
+} */
+
+.modal-content-project p {
+  margin-left: 1.5em;
+  text-indent: -1em;
+}
+.bullet {
+  display: inline-block;
+  width: 0.5em;
+  margin-right: 0.5em;
+  text-align: center;
+}
+
+
 /*
   Project, Modal popup: END
 */
-

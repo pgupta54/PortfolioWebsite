@@ -370,7 +370,7 @@ span.onclick = function() {
   modal_project.getElementsByClassName("modal-content-project")[0].classList.remove("show");
   setTimeout(function() {
     modal_project.style.display = "none";
-  }, 500);
+  }, 100);
 }
 
 // Get the modal
@@ -392,9 +392,20 @@ span2.onclick = function() {
   modal2_project.getElementsByClassName("modal-content-project")[0].classList.remove("show");
   setTimeout(function() {
     modal2_project.style.display = "none";
-  }, 500);
+  }, 100);
 }
 
+
+// For Bullets
+document.addEventListener("DOMContentLoaded", function() {
+  var paragraphs = document.querySelectorAll(".modal-content-project p");
+  for (var i = 0; i < paragraphs.length; i++) {
+    var bullet = document.createElement("span");
+    bullet.innerHTML = "&bull;";
+    bullet.classList.add("bullet");
+    paragraphs[i].insertBefore(bullet, paragraphs[i].firstChild);
+  }
+});
 
 
 /*
