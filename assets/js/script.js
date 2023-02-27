@@ -221,6 +221,8 @@ function About_Skills()
 
 About_Skills();
 
+
+
 /* 
   Document, modal popup: START
 */
@@ -242,10 +244,10 @@ function openModal(event) {
 
   // Get the PDF file path from the data-pdf attribute of the clicked link
   const pdfPath = event.currentTarget.dataset.pdf;
-  console.log("hello world")
+
   // Set the source of the iframe to the PDF file path
   modalContent.innerHTML = `<iframe id="pdf-iframe" src="${pdfPath}" frameborder="0"></iframe>`;
-  console.log("hello world2")
+
   // Display the modal with animation
   modal.style.display = "block";
   setTimeout(() => {
@@ -308,7 +310,93 @@ function sendMail(event) {
   }
 }
 
-
 /* 
   Contact, Send Email: END
+*/ 
+
+
+/*
+  Project, Modal popup: START
+*/
+
+// Get the modal elements
+// var musicModal = document.getElementById("music-recommendation-modal");
+// var tweetModal = document.getElementById("tweet-sentiment-analysis-modal");
+
+
+// // Get the list items
+// var musicItem = document.getElementById("music-recommendation");
+// var tweetItem = document.getElementById("tweet-sentiment-analysis");
+
+// // Get the close buttons
+// var closeBtns = document.getElementsByClassName("close");
+
+// // Add event listeners to open modals when list items are clicked
+// musicItem.addEventListener("click", function() {
+//   musicModal.style.display = "block";
+//   setTimeout(function() {
+//     modal.getElementsByClassName("modal-content-project")[0].classList.add("show");
+//   }, 0);
+// });
+
+// tweetItem.addEventListener("click", function() {
+//   tweetModal.style.display = "block";
+// });
+
+// // Add event listeners to close modals when close buttons are clicked
+// for (var i = 0; i < closeBtns.length; i++) {
+//   closeBtns[i].addEventListener("click", function() {
+//     musicModal.style.display = "none";
+//     tweetModal.style.display = "none";
+//   });
+// }
+
+// Get the modal
+var modal_project = document.getElementById("music-recommendation-modal");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the li, open the modal
+document.getElementById("music-recommendation").addEventListener("click", function() {
+  modal_project.style.display = "block";
+  setTimeout(function() {
+    modal_project.getElementsByClassName("modal-content-project")[0].classList.add("show");
+  }, 0);
+});
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal_project.getElementsByClassName("modal-content-project")[0].classList.remove("show");
+  setTimeout(function() {
+    modal_project.style.display = "none";
+  }, 500);
+}
+
+// Get the modal
+var modal2_project = document.getElementById("tweet-sentiment-analysis-modal");
+
+// Get the <span> element that closes the modal
+var span2 = document.getElementsByClassName("close")[1];
+
+// When the user clicks on the li, open the modal
+document.getElementById("tweet-sentiment-analysis").addEventListener("click", function() {
+  modal2_project.style.display = "block";
+  setTimeout(function() {
+    modal2_project.getElementsByClassName("modal-content-project")[0].classList.add("show");
+  }, 0);
+});
+
+// When the user clicks on <span> (x), close the modal
+span2.onclick = function() {
+  modal2_project.getElementsByClassName("modal-content-project")[0].classList.remove("show");
+  setTimeout(function() {
+    modal2_project.style.display = "none";
+  }, 500);
+}
+
+
+
+/*
+  Project, Modal popup: END
 */
