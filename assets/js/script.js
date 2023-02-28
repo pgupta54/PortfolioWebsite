@@ -319,44 +319,11 @@ function sendMail(event) {
   Project, Modal popup: START
 */
 
-// Get the modal elements
-// var musicModal = document.getElementById("music-recommendation-modal");
-// var tweetModal = document.getElementById("tweet-sentiment-analysis-modal");
-
-
-// // Get the list items
-// var musicItem = document.getElementById("music-recommendation");
-// var tweetItem = document.getElementById("tweet-sentiment-analysis");
-
-// // Get the close buttons
-// var closeBtns = document.getElementsByClassName("close");
-
-// // Add event listeners to open modals when list items are clicked
-// musicItem.addEventListener("click", function() {
-//   musicModal.style.display = "block";
-//   setTimeout(function() {
-//     modal.getElementsByClassName("modal-content-project")[0].classList.add("show");
-//   }, 0);
-// });
-
-// tweetItem.addEventListener("click", function() {
-//   tweetModal.style.display = "block";
-// });
-
-// // Add event listeners to close modals when close buttons are clicked
-// for (var i = 0; i < closeBtns.length; i++) {
-//   closeBtns[i].addEventListener("click", function() {
-//     musicModal.style.display = "none";
-//     tweetModal.style.display = "none";
-//   });
-// }
 
 // Get the modal
 var modal_project = document.getElementById("music-recommendation-modal");
-
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
-
 // When the user clicks on the li, open the modal
 document.getElementById("music-recommendation").addEventListener("click", function() {
   modal_project.style.display = "block";
@@ -375,10 +342,8 @@ span.onclick = function() {
 
 // Get the modal
 var modal2_project = document.getElementById("tweet-sentiment-analysis-modal");
-
 // Get the <span> element that closes the modal
 var span2 = document.getElementsByClassName("close")[1];
-
 // When the user clicks on the li, open the modal
 document.getElementById("tweet-sentiment-analysis").addEventListener("click", function() {
   modal2_project.style.display = "block";
@@ -386,7 +351,6 @@ document.getElementById("tweet-sentiment-analysis").addEventListener("click", fu
     modal2_project.getElementsByClassName("modal-content-project")[0].classList.add("show");
   }, 0);
 });
-
 // When the user clicks on <span> (x), close the modal
 span2.onclick = function() {
   modal2_project.getElementsByClassName("modal-content-project")[0].classList.remove("show");
@@ -394,6 +358,27 @@ span2.onclick = function() {
     modal2_project.style.display = "none";
   }, 100);
 }
+
+
+// Get the modal
+var modal3_project = document.getElementById("smart-restaurant-ordering-modal");
+// Get the <span> element that closes the modal
+var span3 = document.getElementsByClassName("close")[2];
+// When the user clicks on the li, open the modal
+document.getElementById("smart-restaurant-ordering").addEventListener("click", function() {
+  modal3_project.style.display = "block";
+  setTimeout(function() {
+    modal3_project.getElementsByClassName("modal-content-project")[0].classList.add("show");
+  }, 0);
+});
+// When the user clicks on <span> (x), close the modal
+span3.onclick = function() {
+  modal3_project.getElementsByClassName("modal-content-project")[0].classList.remove("show");
+  setTimeout(function() {
+    modal3_project.style.display = "none";
+  }, 100);
+}
+
 
 
 // For Bullets
