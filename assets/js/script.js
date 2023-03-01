@@ -1,5 +1,14 @@
 'use strict';
 
+require('dotenv').config();
+
+const serviceID = process.env.serviceID;
+const templateID = process.env.templateID;
+// const serviceID = "service_15xnpqa";
+// const templateID = "template_80i64fa";
+// Use the secret in your code
+console.log(serviceID, templateID);
+
 
 // const jsdom = require('jsdom');
 // const { JSDOM } = jsdom;
@@ -276,18 +285,10 @@ function closeModal() {
 About_Skills();
 
 
-/* 
+/*
   Contact, Send Email: START
 */
 
-const mySecret = process.env.MY_SECRET;
-console.log(mySecret)
-
-const serviceId = process.env.SERVICEID;
-console.log(serviceId)
-authenticate(serviceId);
-console.log(serviceId)
-console.log(secrets.MY_SECRET)
 
 function sendMail(event) {
   event.preventDefault();
@@ -297,8 +298,6 @@ function sendMail(event) {
   var message = document.getElementById("message").value;
   console.log(name, email, message);
 
-  const serviceID = "service_15xnpqa";
-  const templateID = "template_80i64fa";
 
   if (name !== "" && email !== "" && message !== "") {
     document.querySelector('.form-btn').removeAttribute('disabled');
