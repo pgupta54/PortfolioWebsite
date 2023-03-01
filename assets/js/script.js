@@ -1,10 +1,9 @@
 'use strict';
 
-import dotenv from 'dotenv-flow';
-dotenv.config();
-// Use the variables in your code
-console.log(process.env.serviceID);
+// other-module.js
+import { myFunction } from './main.js';
 
+myFunction();
 
 const serviceID = process.env.serviceID;
 const templateID = process.env.templateID;
