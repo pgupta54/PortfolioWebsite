@@ -1,17 +1,5 @@
 'use strict';
 
-// other-module.js
-import { myFunction } from './main.js';
-
-myFunction();
-
-const serviceID = process.env.serviceID;
-const templateID = process.env.templateID;
-// const serviceID = "service_15xnpqa";
-// const templateID = "template_80i64fa";
-// Use the secret in your code
-console.log(serviceID, templateID);
-
 
 // const jsdom = require('jsdom');
 // const { JSDOM } = jsdom;
@@ -288,10 +276,9 @@ function closeModal() {
 About_Skills();
 
 
-/*
+/* 
   Contact, Send Email: START
 */
-
 
 function sendMail(event) {
   event.preventDefault();
@@ -301,6 +288,8 @@ function sendMail(event) {
   var message = document.getElementById("message").value;
   console.log(name, email, message);
 
+  const serviceID = "service_15xnpqa";
+  const templateID = "template_80i64fa";
 
   if (name !== "" && email !== "" && message !== "") {
     document.querySelector('.form-btn').removeAttribute('disabled');
