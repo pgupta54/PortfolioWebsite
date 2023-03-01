@@ -288,6 +288,9 @@ function sendMail(event) {
   var message = document.getElementById("message").value;
   console.log(name, email, message);
 
+  const mySecret = process.env.MY_SECRET;
+  console.log(mySecret)
+
   const serviceID = "service_15xnpqa";
   const templateID = "template_80i64fa";
 
