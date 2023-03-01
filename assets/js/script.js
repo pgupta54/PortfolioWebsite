@@ -1,7 +1,7 @@
 'use strict';
 
-import { config } from 'dotenv-browser';
-config();
+import dotenv from 'dotenv-flow';
+dotenv.config();
 // Use the variables in your code
 console.log(process.env.serviceID);
 
