@@ -280,6 +280,15 @@ About_Skills();
   Contact, Send Email: START
 */
 
+const mySecret = process.env.MY_SECRET;
+console.log(mySecret)
+
+const serviceId = process.env.SERVICEID;
+console.log(serviceId)
+authenticate(serviceId);
+console.log(serviceId)
+console.log(secrets.MY_SECRET)
+
 function sendMail(event) {
   event.preventDefault();
 
@@ -287,9 +296,6 @@ function sendMail(event) {
   var email = document.getElementById("email").value;
   var message = document.getElementById("message").value;
   console.log(name, email, message);
-
-  const mySecret = process.env.MY_SECRET;
-  console.log(mySecret)
 
   const serviceID = "service_15xnpqa";
   const templateID = "template_80i64fa";
