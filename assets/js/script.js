@@ -1,6 +1,10 @@
 'use strict';
 
-require('dotenv').config();
+import { config } from 'dotenv-browser';
+config();
+// Use the variables in your code
+console.log(process.env.serviceID);
+
 
 const serviceID = process.env.serviceID;
 const templateID = process.env.templateID;
