@@ -2091,3 +2091,33 @@ li.document-post-item{
 /*
   Project, Modal popup: END
 */
+
+
+/*
+  Title below Name typing animation: START
+*/
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  display: none; /* hide all titles by default */
+  overflow: hidden; /* hide the overflow text */
+  white-space: nowrap; /* keep the text on one line */
+  border-right: .15em solid orange;
+  letter-spacing: .15em;
+  animation: typing 3s steps(30), rotating 9s linear infinite; /* add the typing and rotating animations */
+  width: 0;
+}
+
+@keyframes typing {
+  from { width: 0; } /* start with zero width */
+  to { width: 90%; } /* gradually increase the width to 100% */
+}
+
+/* animation: typing 3s steps(30, end), rotating 9s linear infinite !important; */
+
+/*
+  Title below Name typing animation: END
+*/

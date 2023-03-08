@@ -396,3 +396,32 @@ document.addEventListener("DOMContentLoaded", function() {
 /*
   Project, Modal popup: END
 */
+
+
+
+// const title = document.querySelector('.title');
+// const phrases = ["Data Science", "Data Analytics", "Data Engineer"];
+// let i = 0;
+
+// setInterval(() => {
+//   title.textContent = phrases[i];
+//   console.log(`Current text: ${title.textContent}`);
+//   i = (i + 1) % phrases.length;
+// }, 3000);
+
+
+const title1 = document.querySelector('#title1');
+const title2 = document.querySelector('#title2');
+const title3 = document.querySelector('#title3');
+const title4 = document.querySelector('#title4');
+const titles = [title1, title2, title3, title4];
+let i = 0;
+
+titles[1].style.display = 'block';
+setInterval(() => {
+  titles.forEach(title => {
+    title.style.display = 'none';
+  });
+  titles[i].style.display = 'block';
+  i = (i + 1) % titles.length;
+}, 3000);
